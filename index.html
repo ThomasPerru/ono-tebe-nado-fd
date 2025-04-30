@@ -11,53 +11,131 @@
   </head>
 
   <body>
+    <!-- Блок шапки -->
+
     <header class="header">
-      <nav></nav>
-      <a href=""></a>
-      <address></address>
+      <nav class="header_menu">
+        <ul class="header_menu_list">
+          <li class="header_menu_item header_menu_item_active">
+            <a class="header_menu_link">главная</a>
+          </li>
+          <li class="header_menu_item">
+            <a class="header_menu_link" href="">посмотреть лоты</a>
+          </li>
+          <li class="header_menu_item">
+            <a class="header_menu_link" href="">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header_logo_black">
+        <img
+          class="header_logo_black_image"
+          src="./images/logo-black.svg"
+          alt="Логотип проекта"
+        />
+      </a>
+      <address class="header_contacts">
+        <a href="+9 999 555 5555">+9 999 555 5555</a>
+        <a href="info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
     </header>
+
+    <!-- Конец блока шапки -->
+
     <main>
+      <!-- Блок "оно тебе надо" -->
+
       <section class="cover">
-        <h1></h1>
+        <h1 class="cover_title">
+          <span class="cover_span">ОНО</span>
+          <span class="cover_span text_center">ТЕБЕ</span>
+          <span class="cover_span text_right">НАДО</span>
+        </h1>
         <div class="description">
-          <p></p>
-          <button></button>
+          <p>Аукцион вещей, вкоторые никто не верил</p>
+          <button>Сделать ставку</button>
         </div>
       </section>
-      <section class="lots">
-        <h2></h2>
+
+      <!-- Конец блока "оно тебе надо"" -->
+
+      <!-- Блок лотов -->
+
+      <section class="content_section lots">
+        <h2 class="lots_text">Лоты</h2>
         <ul>
           <li>
-            <a href=""></a>
+            <!-- остановился сдесь доделать карты лотов через заголовки -->
+            <article class="lots_one">
+              <h3 class="">Фильм режиссёра, который бросил киношколу></h3>
+              <a href="#0"></a>
+            </article>
+          </li>
+          <li>
+            <a href="#0"
+              >Книга, где описан один скучный день из жизни рекламного агента</a
+            >
             <article></article>
           </li>
           <li>
-            <a href=""></a>
-            <article></article>
-          </li>
-          <li>
-            <a href=""></a>
+            <a href="#0"
+              >Картина, которую повторит даже 5-летний сын маминой подруги</a
+            >
             <article></article>
           </li>
         </ul>
-        <a href=""></a>
+        <a class="lots_more" href="#0">посмотреть больше</a>
       </section>
-      <section class="about">
+
+      <!-- Конец блока лотов -->
+
+      <!-- Блок "об аукционе" -->
+
+      <section class="content_section about">
         <div></div>
         <article>
-          <h2>Об аукционе</h2>
+          <h2 class="auction_text">Об аукционе</h2>
           <p></p>
         </article>
       </section>
     </main>
+
+    <!-- Конец блока "об аукционе" -->
+
+    <!-- Блок подвала -->
+
     <footer class="footer">
       <address></address>
-      <nav></nav>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+      <nav class="header_menu">
+        <ul class="header_menu_list">
+          <li class="header_menu_item header_menu_item_active">
+            <a class="header_menu_link" href="#0">главная</a>
+          </li>
+          <li class="header_menu_item">
+            <a class="header_menu_link" href="">посмотреть лоты</a>
+          </li>
+          <li class="header_menu_item">
+            <a class="header_menu_link">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer_links">
+        <li>
+          <img src="./images/yt.svg" alt="youtube" />
+          <a href="0#"></a>
+        </li>
+        <li>
+          <img src="./images/vk.svg" alt="VK" />
+          <a href="0#"></a>
+        </li>
+        <li>
+          <img src="./images/pinterest.svg" alt="Pinterest" />
+          <a href="0#"></a>
+        </li>
       </ul>
     </footer>
+
+    <!-- Конец блока подвала -->
   </body>
 </html>
