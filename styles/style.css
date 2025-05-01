@@ -1,8 +1,58 @@
 
+/* Сброс auto italic у address */
+
+address {
+  font-style:normal;
+}
+
 /* Блок шапки */
 
 .header {
+  display: grid;
+  grid-template-columns: 3fr min-content 3fr;
+  align-items: center;
+  height: 293px;
+}
 
+.header_menu {
+  justify-items: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.header_menu_list {
+}
+
+.header_menu_item {
+}
+
+.header_menu_item_active {
+  list-style-type: none;
+}
+
+.header_menu_link {
+}
+
+.header_logo {
+  justify-items: center;
+  align-items: center;
+  width: 148px;
+  height: 105px;
+  text-align: center;
+}
+
+.header_logo_image {
+  width: 129px;
+  height: 104px;
+}
+
+.header_contacts {
+  font-size: 18px;
+  display: block;
+  justify-self: end;
+  max-width: 240px;
+  height: 98px;
+  text-align: left;
 }
 
 /* Конец блока шапки */
@@ -10,32 +60,132 @@
 /* Блок "оно тебе надо"  */
 
 .cover {
+    position: relative;
+    z-index: 1;
+    min-height: 757px;
+  background-color: #000000;
+}
+
+.overlay {
+  position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #000000;
+    background-image: url(/images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover_title {
+  top: 165px;
+  left: 50px;
+  z-index: 0;
+  width: 1000px;
+  height: 385px;
 
 }
 
-.description {
+.cover_span {
+  display: block; 
+  color: #FFFFFF;
+  font-size :100px;
+}
 
+.cover_text_center {
+  text-align: center;
+}
+
+.cover_text_right {
+  text-align: right;
+}
+
+.description {
+  z-index: 0;
+}
+
+.cover_subline { 
+  color: #FFFFFF;
+  font-size :22px;
+}
+
+.cover_button { 
+  color: #FFFFFF;
+  font-size :22px;
 }
 
 /* Блок карточек с лотами */
 
 /* .content_section родитель для .lots и .about */
-.content_section{ 
-  Width: 1052px;
+.content_section {
+  width: 1052px;
 }
 
 .lots {
+  top: 1230px;
+  left: 24px;
+  height: 723px;
+}
 
+.lots_title {
+}
+
+.card__title {
+}
+
+.lots_card_left {
+}
+
+.lots_card_center {
+}
+
+.lots_card_right {
+}
+
+.lots_more {
 }
 
 /* Блок "об аукционе" */
 
 .about {
+}
 
+.about__logo {
+}
+
+.about__logo_image {
+}
+
+.auction_title_text {
+}
+
+.auction__text {
 }
 
 /* Блок подвала */
 
 .footer {
+}
 
+.footer_contacts {
+}
+
+.footer_menu_list {
+}
+
+.footer_menu_item {
+  list-style-type: none;
+}
+
+.footer_menu {
+}
+
+.footer_links {
+}
+
+.footer_links_item {
+  width: 48px;
+  height: 48px;
+  list-style-type: none;
 }
