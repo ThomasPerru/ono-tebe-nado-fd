@@ -1,18 +1,18 @@
-
 /* Сброс auto italic у address */
 
 address {
-  font-style:normal;
+  font-style: normal;
 }
 
 h2 {
-  font-size: 40px;
   font-weight: 700;
+  font-size: 40px;
 }
 
 h3 {
   font-size: 22px;
 }
+
 /* Блок шапки */
 
 .header {
@@ -43,9 +43,6 @@ h3 {
 .header_menu_item_active {
   text-decoration: none;
   list-style-type: none;
-}
-
-.header_menu_link {
 }
 
 .header_logo {
@@ -81,19 +78,19 @@ h3 {
   background-color: #000000;
   background-image: url(/images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .overlay {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
   opacity: 0.6;
   background-color: #000000;
-  top: 0;
-  left: 0;
 }
 
 .cover_title {
@@ -111,9 +108,9 @@ h3 {
 }
 
 .cover_span {
-  display: block; 
-  color: #FFFFFF;
-  font-size :100px;
+  display: block;
+  color: #ffffff;
+  font-size: 100px;
 }
 
 .cover_text_center {
@@ -135,16 +132,16 @@ h3 {
 }
 
 .cover_subline {
-  color: #FFFFFF; 
+  color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 20px;
 }
 
-.cover_button { 
+.cover_button {
   border: 1px solid;
   padding: 14px 32px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
@@ -158,32 +155,26 @@ h3 {
 /* .content_section родитель для .lots и .about */
 .content_section {
   width: 1052px;
-  
 }
 
 .lots {
-  /* padding: 0 24px; */
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .lots_heading {
   padding: 180px 0px 27px 40px;
-  text-transform: uppercase;
   font-size: 40px;
+  text-transform: uppercase;
 }
 
 .lots_card-list {
-  list-style-type: none;
   display: flex;
-  gap: 25px;
   flex-wrap: wrap;
-}
-
-.lots__card-list-item {
-
+  gap: 25px;
+  list-style-type: none;
 }
 
 .lots_card__title {
@@ -191,15 +182,14 @@ h3 {
 }
 
 .card {
-  min-height: 596px;
-  Width: 334px;
-  height: 100%;
-  color: #FFFFFF;
-  padding: 48px 40px;  
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  display: flex;
- 
+  width: 334px;
+  height: 100%;
+  min-height: 596px;
+  padding: 48px 40px;
+  color: #ffffff;
 }
 
 .card-link {
@@ -207,7 +197,7 @@ h3 {
 }
 
 .lots_card_text {
-font-size: 20px;
+  font-size: 20px;
 }
 
 .card_type_film {
@@ -215,8 +205,8 @@ font-size: 20px;
   z-index: 1;
   background-image: url(/images/card-lot-01.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .card_type_book {
@@ -224,8 +214,8 @@ font-size: 20px;
   z-index: 1;
   background-image: url(/images/card-lot-02.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .card_type_picture {
@@ -233,14 +223,14 @@ font-size: 20px;
   z-index: 1;
   background-image: url(/images/card-lot-03.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .lots__look-more-link {
-  font-size: 20px;
   display: block;
   margin: 30px 0 0 40px;
+  font-size: 20px;
 }
 
 /* Конец блока карточек с лотами */
@@ -260,9 +250,9 @@ font-size: 20px;
   align-items: center;
   width: 240px;
   height: 240px;
+  margin: 35px;
   border-radius: 50%;
   background-color: #000000;
-  margin: 35px;
 }
 
 .about__column {
@@ -271,7 +261,6 @@ font-size: 20px;
 
 .about__logo_image {
   width: 148px;
-  
 }
 
 .about__column_text {
@@ -279,22 +268,19 @@ font-size: 20px;
 }
 
 .auction_title_text {
-  text-transform: uppercase;
   padding: 136px 0 100px;
   font-size: 40px;
+  text-transform: uppercase;
 }
 
 .auction__text {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  line-height: 24px;
   font-size: 20px;
+  line-height: 24px;
 }
 
-.about_first_p {
- 
-}
 /* Конец блока "об аукционе" */
 
 /* Блок подвала */
@@ -302,16 +288,16 @@ font-size: 20px;
 .footer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  Height: 180px;
+  height: 180px;
 }
 
 .footer_contacts {
   display: block;
+  justify-self: center;
   max-width: 240px;
   height: 98px;
   font-size: 18px;
   text-align: left;
-  justify-self: center;
 }
 
 .footer_menu_list {
@@ -322,13 +308,13 @@ font-size: 20px;
   list-style-type: none;
 }
 
-.header_menu_link_underline{
+.header_menu_link_underline {
   text-decoration: underline;
 }
 
 .footer_menu {
-  align-self: start;
   justify-self: center;
+  align-self: start;
 }
 
 .footer_links {
