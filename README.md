@@ -1,1 +1,1 @@
-git@github.com:ThomasPerru/ono-tebe-nado-fd.git
+https://github.com/ThomasPerru/ono-tebe-nado-fd#
