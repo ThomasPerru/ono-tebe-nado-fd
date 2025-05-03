@@ -64,26 +64,32 @@
       <!-- Блок лотов -->
 
       <section class="content_section lots">
-        <h2 class="lots_title">Лоты</h2>
-        <ul>
-          <li>
-            <article class="lots_card_left">
-              <h3 class="card__title"></h3>
-              <a href="#0">Фильм режиссёра, который бросил киношколу</a>
-              <p>
+        <h2 class="lots_heading">Лоты</h2>
+        <ul class="lots_card-list">
+          <li class="lots__card-list-item">
+            <article class="card card_type_film">
+              <div class="overlay"></div>
+              <h3 class="lots_card__title">
+                <a class="card-link" href="#0"
+                  >Фильм режиссёра, который бросил киношколу</a
+                >
+              </h3>
+              <p class="lots_card_text">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </p>
             </article>
           </li>
-          <li>
-            <article class="lots_card_center">
-              <h3 class="card__title"></h3>
-              <a href="#0"
-                >Книга, где описан один скучный день из жизни рекламного
-                агента</a
-              >
-              <p>
+          <li class="lots__card-list-item">
+            <article class="card card_type_book">
+              <div class="overlay"></div>
+              <h3 class="lots_card__title">
+                <a class="card-link" href="#0"
+                  >Книга, где описан один скучный день из жизни рекламного
+                  агента</a
+                >
+              </h3>
+              <p class="lots_card_text">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на древнеанглийский. В ней одновременно
                 рассказывается о 16 июня 1904 года и об истории литературы,
@@ -93,13 +99,16 @@
               </p>
             </article>
           </li>
-          <li>
-            <article class="lots_card_right">
-              <h3 class="card__title"></h3>
-              <a href="#0"
-                >Картина, которую повторит даже 5-летний сын маминой подруги</a
-              >
-              <p>
+          <li class="lots__card-list-item">
+            <article class="card card_type_picture">
+              <div class="overlay"></div>
+              <h3 class="lots_card__title">
+                <a class="card-link" href="#0"
+                  >Картина, которую повторит даже 5-летний сын маминой
+                  подруги</a
+                >
+              </h3>
+              <p class="lots_card_text">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе
                 что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                 котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -107,8 +116,34 @@
               </p>
             </article>
           </li>
+          <li class="lots__card-list-item">
+            <article class="card card_type_film">
+              <div class="overlay"></div>
+              <h3 class="lots_card__title">
+                <a class="card-link" href="#0"
+                  >Фильм режиссёра, который бросил киношколу</a
+                >
+              </h3>
+              <p class="lots_card_text">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+            </article>
+            <li class="lots__card-list-item">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+                <h3 class="lots_card__title">
+                  <a class="card-link" href="#0"
+                    >Фильм режиссёра, который бросил киношколу</a
+                  >
+                </h3>
+                <p class="lots_card_text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article>
         </ul>
-        <a class="lots_more" href="#0">посмотреть больше</a>
+        <a class="lots__look-more-link" href="#0">посмотреть больше</a>
       </section>
 
       <!-- Конец блока лотов -->
@@ -116,17 +151,17 @@
       <!-- Блок "об аукционе" -->
 
       <section class="content_section about">
-        <div class="about__logo">
+        <div class="about__logo about__column">
           <img
             class="about__logo_image"
             src="images/logo-white.svg"
             alt="Логотип проекта"
           />
         </div>
-        <article>
+        <article class="about__column_text">
           <h2 class="auction_title_text">Об аукционе</h2>
           <div class="auction__text">
-            <p>
+            <p class="about_first_p">
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
@@ -168,7 +203,9 @@
             <a class="header_menu_link" href="#0">посмотреть лоты</a>
           </li>
           <li class="footer_menu_item">
-            <a class="header_menu_link header_menu_link_underline">об аукционе</a>
+            <a class="header_menu_link header_menu_link_underline"
+              >об аукционе</a
+            >
           </li>
         </ul>
       </nav>

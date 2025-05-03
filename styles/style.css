@@ -5,6 +5,14 @@ address {
   font-style:normal;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 22px;
+}
 /* Блок шапки */
 
 .header {
@@ -74,6 +82,7 @@ address {
   background-image: url(/images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .overlay {
@@ -83,17 +92,19 @@ address {
   height: 100%;
   opacity: 0.6;
   background-color: #000000;
+  top: 0;
+  left: 0;
 }
 
 .cover_title {
+  position: relative;
   top: 165px;
   left: 50px;
-  width: 1000px;
-  height: 385px;
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 1000px;
+  height: 385px;
   line-height: 1.15;
   letter-spacing: 27px;
   size: 100px;
@@ -114,8 +125,8 @@ address {
 }
 
 .description {
-  z-index: 0;
   position: relative;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,10 +134,10 @@ address {
   padding: 264px 0 0;
 }
 
-.cover_subline { 
+.cover_subline {
+  color: #FFFFFF; 
   font-size: 22px;
   text-transform: uppercase;
-  color: #FFFFFF;
   word-spacing: 20px;
 }
 
@@ -140,69 +151,169 @@ address {
   cursor: pointer;
 }
 
+/* Конец блока "оно тебе надо"  */
+
 /* Блок карточек с лотами */
 
 /* .content_section родитель для .lots и .about */
 .content_section {
   width: 1052px;
+  
 }
 
 .lots {
-  top: 1230px;
-  left: 24px;
-  height: 723px;
+  /* padding: 0 24px; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.lots_title {
+.lots_heading {
+  padding: 180px 0px 27px 40px;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
-.card__title {
+.lots_card-list {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
-.lots_card_left {
+.lots__card-list-item {
+
 }
 
-.lots_card_center {
+.lots_card__title {
+  text-transform: uppercase;
 }
 
-.lots_card_right {
+.card {
+  min-height: 596px;
+  Width: 334px;
+  height: 100%;
+  color: #FFFFFF;
+  padding: 48px 40px;  
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+ 
 }
 
-.lots_more {
+.card-link {
+  height: 100%;
 }
+
+.lots_card_text {
+font-size: 20px;
+}
+
+.card_type_film {
+  position: relative;
+  z-index: 1;
+  background-image: url(/images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_book {
+  position: relative;
+  z-index: 1;
+  background-image: url(/images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_picture {
+  position: relative;
+  z-index: 1;
+  background-image: url(/images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  display: block;
+  margin: 30px 0 0 40px;
+}
+
+/* Конец блока карточек с лотами */
 
 /* Блок "об аукционе" */
 
 .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 24px;
+  padding: 120px 24px 180px;
 }
 
 .about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000000;
+  margin: 35px;
+}
+
+.about__column {
+  justify-self: center;
 }
 
 .about__logo_image {
+  width: 148px;
+  
+}
+
+.about__column_text {
+  grid-column: 2/4;
 }
 
 .auction_title_text {
+  text-transform: uppercase;
+  padding: 136px 0 100px;
+  font-size: 40px;
 }
 
 .auction__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  line-height: 24px;
+  font-size: 20px;
 }
+
+.about_first_p {
+ 
+}
+/* Конец блока "об аукционе" */
 
 /* Блок подвала */
 
 .footer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  Height: 180px;
 }
 
 .footer_contacts {
   display: block;
-  justify-self: end;
   max-width: 240px;
   height: 98px;
   font-size: 18px;
   text-align: left;
+  justify-self: center;
 }
 
 .footer_menu_list {
+  text-align: center;
 }
 
 .footer_menu_item {
@@ -214,9 +325,14 @@ address {
 }
 
 .footer_menu {
+  align-self: start;
+  justify-self: center;
 }
 
 .footer_links {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
 }
 
 .footer_links_item {
