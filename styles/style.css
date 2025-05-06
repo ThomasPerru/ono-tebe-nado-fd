@@ -26,6 +26,7 @@ h3 {
   display: flex;
   justify-items: center;
   align-items: center;
+  padding: 0 6px 5px 19px;
   font-size: 18px;
 }
 
@@ -37,10 +38,11 @@ h3 {
 }
 
 .header_menu_item {
+  text-underline-offset: 4px;
   list-style-type: circle;
 }
 
-.header_menu_item_active {
+.header_menu_link_active {
   text-decoration: none;
   list-style-type: none;
 }
@@ -61,10 +63,13 @@ h3 {
 .header_contacts {
   display: block;
   justify-self: center;
-  max-width: 240px;
+  max-width: 328px;
   height: 98px;
+  padding: 0 0 0 113px;
   font-size: 18px;
+  line-height: 24px;
   text-align: left;
+  text-underline-offset: 3px;
 }
 
 /* Конец блока шапки */
@@ -76,7 +81,7 @@ h3 {
   z-index: 1;
   min-height: 757px;
   background-color: #000000;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -103,7 +108,7 @@ h3 {
   width: 1000px;
   height: 385px;
   line-height: 1.15;
-  letter-spacing: 27px;
+  letter-spacing: 30px;
   size: 100px;
 }
 
@@ -111,13 +116,16 @@ h3 {
   display: block;
   color: #ffffff;
   font-size: 100px;
+  text-transform: uppercase;
 }
 
 .cover_text_center {
+  padding: 0 0 0 30px;
   text-align: center;
 }
 
 .cover_text_right {
+  padding: 0 0 0 614px;
   text-align: right;
 }
 
@@ -128,19 +136,19 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 106px;
-  padding: 264px 0 0;
+  padding: 270px 0 0 0;
 }
 
 .cover_subline {
   color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 20px;
+  word-spacing: 19px;
 }
 
 .cover_button {
   border: 1px solid;
-  padding: 14px 32px;
+  padding: 13px 32px;
   color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
@@ -165,7 +173,7 @@ h3 {
 }
 
 .lots_heading {
-  padding: 180px 0px 27px 40px;
+  padding: 180px 0 27px 40px;
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -178,6 +186,8 @@ h3 {
 }
 
 .lots_card__title {
+  text-decoration: underline 1px;
+  text-underline-offset: 3px;
   text-transform: uppercase;
 }
 
@@ -194,6 +204,7 @@ h3 {
 
 .card-link {
   height: 100%;
+  text-decoration: none;
 }
 
 .lots_card_text {
@@ -203,7 +214,7 @@ h3 {
 .card_type_film {
   position: relative;
   z-index: 1;
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -212,7 +223,7 @@ h3 {
 .card_type_book {
   position: relative;
   z-index: 1;
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -221,7 +232,7 @@ h3 {
 .card_type_picture {
   position: relative;
   z-index: 1;
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -231,6 +242,7 @@ h3 {
   display: block;
   margin: 30px 0 0 40px;
   font-size: 20px;
+  text-underline-offset: 4px;
 }
 
 /* Конец блока карточек с лотами */
@@ -240,7 +252,6 @@ h3 {
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
   padding: 120px 24px 180px;
 }
 
@@ -250,7 +261,7 @@ h3 {
   align-items: center;
   width: 240px;
   height: 240px;
-  margin: 35px;
+  margin: 35px 72px 0 47px;
   border-radius: 50%;
   background-color: #000000;
 }
@@ -277,6 +288,8 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  width: 680px;
+  height: 312px;
   font-size: 20px;
   line-height: 24px;
 }
@@ -294,10 +307,12 @@ h3 {
 .footer_contacts {
   display: block;
   justify-self: center;
-  max-width: 240px;
+  max-width: 264px;
   height: 98px;
   font-size: 18px;
+  line-height: 24px;
   text-align: left;
+  text-underline-offset: 4px;
 }
 
 .footer_menu_list {
@@ -305,22 +320,31 @@ h3 {
 }
 
 .footer_menu_item {
+  text-underline-offset: 5px;
   list-style-type: none;
 }
 
-.header_menu_link_underline {
+.footer_menu_link_underline {
   text-decoration: underline;
+}
+
+.footer_menu_link_active {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .footer_menu {
   justify-self: center;
   align-self: start;
+  padding: 0 0 0 13px;
+  font-size: 18px;
 }
 
 .footer_links {
   display: flex;
   justify-content: center;
   gap: 48px;
+  padding: 0 0 0 46px;
 }
 
 .footer_links_item {
