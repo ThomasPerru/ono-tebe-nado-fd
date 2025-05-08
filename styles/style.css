@@ -42,6 +42,10 @@ h3 {
   list-style-type: circle;
 }
 
+.header_menu_item_no_marker {
+  list-style-type: none;
+}
+
 .header_menu_link_active {
   text-decoration: none;
   list-style-type: none;
